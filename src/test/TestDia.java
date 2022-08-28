@@ -22,5 +22,11 @@ public class TestDia {
         System.out.println("Sobreescritura " + citaSobreescrita.getDescripcion() + ": " + dia.anotarCita(14, citaSobreescrita));
 
         dia.mostrarCitas();
-    }
+
+        Cita citaFH1 = new Cita("Turno oftalmologo", 1);
+        Cita citaFH2 = new Cita("Turno pediatra", 1);
+        System.out.println("Se guardo la cita " + citaFH1.getDescripcion() + ": " + dia.anotarCita(8, citaFH1));
+        System.out.println("Se guardo la cita " + citaFH2.getDescripcion() + ": " + dia.anotarCita(18, citaFH1));
+
+        }
 }
